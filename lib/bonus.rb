@@ -1,12 +1,17 @@
-require_relative 'spec_helper'
-require_relative '../lib/bonus.rb'
+{name: "Benvolio", age: "17", attitude: "worried"},
+         {name: "Steven", age: "30", attitude: "confused"}	         {name: "Steven", age: "30", attitude: "confused"}
+      ]	      ]
+   }, 	   },
+   :capulet => {	   :capulet => {
+      :patriarch => {name: "Lord Capulet", age: "50"},	      :patriarch => {name: "Lord Capulet", age: "50"},
+      :matriarch => {name: "Lady Capulet", age: "51"},	      :matriarch => {name: "Lady Capulet", age: "51"},
+      :heroine => {name: "Juliet", age: "15", status: "alive"},	      :heroine => {name: "Juliet", age: "15", status: "alive"},
+      :heroine_friends => [	      :heroine_friends => [
+          {name: "Mercutio", age: "18", attitude: "hot-headed"}, 	          {name: "Mercutio", age: "18", attitude: "hot-headed"},
+          {name: "Nurse", age: "44", attitude: "worried"}	          {name: "Nurse", age: "44", attitude: "worried"}
+      ]	      ]
+   }	   }
+  }	  }
 
-
-describe "#bonus" do 	describe "#bonus" do
-  # remove the 'x' from the 'xit' below to activate this test!	  # remove the 'x' from the 'xit' below to activate this test!
-	xit "uses the []= method to change the hero and heroine's status from alive to dead" do 		it "uses the []= method to change the hero and heroine's status from alive to dead" do
-    expect(bonus[:montague][:hero][:status]).to eq("dead")	    expect(bonus[:montague][:hero][:status]).to eq("dead")
-    expect(bonus[:capulet][:heroine][:status]).to eq("dead")	    expect(bonus[:capulet][:heroine][:status]).to eq("dead")
-
-  end	  end
-end 	end
+	epic_tragedy[:montague][:hero][:status] = "dead"
+   epic_tragedy[:capulet][:heroine][:status] = "dea
