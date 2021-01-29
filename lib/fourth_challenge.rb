@@ -1,9 +1,4 @@
-epic_tragedy[:montague][:patriarch][:name] = "Michael Jordan"
 
-puts epic_tragedy
-
-#  =>
-{
    :montague => {
       :patriarch => {name: "Michael Jordan", age: "53"},
       :matriarch => {name: "Lady Montague", age: "54"},
@@ -13,6 +8,7 @@ puts epic_tragedy
         {name: "Mercutio", age: "18", attitude: "hot-headed"}
       ]
    },
+
    :capulet => {
       :patriarch => {name: "Lord Capulet", age: "50"},
       :matriarch => {name: "Lady Capulet", age: "51"},
@@ -23,4 +19,3 @@ puts epic_tragedy
       ]
    }
 }
-end
